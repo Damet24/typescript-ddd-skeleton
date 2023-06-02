@@ -1,10 +1,11 @@
-import {v4 as uuidv4} from 'uuid'
-export class User {
-    id: string
-    name: string
+import { v4 as uuidv4 } from 'uuid'
 
-    constructor(id: string | null, name: string) {
-        this.id = id ?? uuidv4()
-        this.name = name
-    }
+export class User {
+  id: string
+  name: string
+
+  constructor (id: string | null, name: string) {
+    this.id = id ?? uuidv4()
+    this.name = name
+  }
 }
