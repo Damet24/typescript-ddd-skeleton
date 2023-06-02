@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint"
+    "lint": "eslint",
+    "tsc": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -18,12 +19,12 @@
   "devDependencies": {
     "@types/node": "20.2.5",
     "@types/uuid": "9.0.1",
-    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/eslint-plugin": "5.50.0",
     "eslint": "8.41.0",
-    "eslint-config-standard-with-typescript": "^35.0.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "typescript": "*"
+    "eslint-config-standard-with-typescript": "35.0.0",
+    "eslint-plugin-import": "2.25.2",
+    "eslint-plugin-n": "15.0.0",
+    "eslint-plugin-promise": "6.0.0",
+    "typescript": "5.1.3"
   }
 }
