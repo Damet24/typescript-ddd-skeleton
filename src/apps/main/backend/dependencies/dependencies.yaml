@@ -1,4 +1,8 @@
 services:
   Apps.main.backend.GetUserController:
-    class: '../controllers/user/GetUserController.ts'
-    arguments: ['@User.domain.ListAllUserUseCase']
+    class: ../controllers/user/GetUserController
+    arguments: ['@User.domain.ListAllUserUseCase', '@Shared.Responses']
+
+  Apps.main.backend.PostUserController:
+    class: ../controllers/user/PostUserController
+    arguments: ['@User.domain.CreateUserUseCase', '@Shared.Responses']

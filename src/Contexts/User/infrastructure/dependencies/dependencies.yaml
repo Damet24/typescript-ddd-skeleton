@@ -1,7 +1,11 @@
 services:
   User.domain.UserRepository:
-    class: '../InMemoryUserRepository.ts'
+    class: ../InMemoryUserRepository
   
   User.domain.ListAllUserUseCase:
-    class: '../../application/Get/ListAllUserUseCase.ts'
+    class: ../../application/Get/ListAllUserUseCase
+    arguments: ['@User.domain.UserRepository']
+  
+  User.domain.CreateUserUseCase:
+    class: ../../application/Create/CreateUserUseCase
     arguments: ['@User.domain.UserRepository']

@@ -1,6 +1,6 @@
 services:
   Shared.Logger:
-    class: '../WinstonLogger'
+    class: ../WinstonLogger
 
   Shared.Responses:
-    class: '../Responses'
+    class: ../Responses
