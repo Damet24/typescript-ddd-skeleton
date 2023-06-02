@@ -1,7 +1,4 @@
-imports:
-  - { resource: '../../../Contexts/User/infrastructure/dependencies/dependencies.yaml' }
-
 services:
   Apps.main.backend.GetUserController:
-    class: '../../controllers/user/GetUserController.ts'
+    class: '../controllers/user/GetUserController.ts'
     arguments: ['@User.domain.ListAllUserUseCase']

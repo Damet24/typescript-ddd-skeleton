@@ -1,0 +1,3 @@
+imports:
+  - { resource: '../../../../Contexts/User/infrastructure/dependencies/dependencies.yaml' }
+  - { resource: ./dependencies.yaml }
