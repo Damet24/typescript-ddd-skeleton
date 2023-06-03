@@ -4,7 +4,8 @@ import { type UserRepository } from '../domain/UserRepository'
 const users = [
   new User(null, 'John'),
   new User(null, 'Anna'),
-  new User(null, 'Daniel')
+  new User(null, 'Daniel'),
+  new User(null, 'Diana')
 ]
 
 export class InMemoryUserRepository implements UserRepository {
