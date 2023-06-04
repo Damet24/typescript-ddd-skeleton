@@ -117,7 +117,7 @@ npm run start:mainapp:backend:dev
 
 ### Frontend
 
-The frontend part of the project is a basic app created with HTML, CSS, and JavaScript (Vanilla). It is located in the `src/apps/main/frontend` directory.
+The frontend part of the project is built using Vite.js with TypeScript. It is located in the `src/apps/main/frontend` directory.
 
 To configure the frontend, navigate to the `src/apps/main/frontend` directory in your terminal and run the following command to install the required dependencies:
 
@@ -127,13 +127,14 @@ npm install
 
 You can also use other package managers like Yarn or PNPM by replacing `npm` with the respective command (`yarn` or `pnpm`).
 
-After the dependencies are installed, you can start the frontend development server using the following command:
+After the dependencies are installed, you can use the following scripts:
 
-```bash
-npm run dev
-```
+- `npm run dev`: Starts the development server for the frontend.
+- `npm run build`: Builds the frontend project for production.
+- `npm run preview`: Serves the production build locally for previewing.
+- `npm run lint`: Lints the frontend code using ESLint.
 
-Alternatively, if you have a different package manager, you can use its corresponding command.
+Feel free to customize and extend the frontend project according to your needs.
 
 ### Running Tests
 
