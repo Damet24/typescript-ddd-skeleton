@@ -134,8 +134,6 @@ After the dependencies are installed, you can use the following scripts:
 - `npm run preview`: Serves the production build locally for previewing.
 - `npm run lint`: Lints the frontend code using ESLint.
 
-Feel free to customize and extend the frontend project according to your needs.
-
 ### Running Tests
 
 Please note that the tests are not implemented in this template. You are encouraged to write tests for your backend and frontend code.
