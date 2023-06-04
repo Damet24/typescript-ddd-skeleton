@@ -1,7 +1,7 @@
-{
+module.exports = {
     "env": {
-        "es2021": true,
-        "node": true
+        "browser": true,
+        "es2021": true
     },
     "extends": "standard-with-typescript",
     "overrides": [
@@ -11,9 +11,6 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "ignorePatterns": ["src/apps/main/frontend"],
     "rules": {
-        "@typescript-eslint/no-misused-promises": "off",
-        "@typescript-eslint/no-var-requires": "off"
     }
 }

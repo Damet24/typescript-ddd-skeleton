@@ -2,11 +2,11 @@ import { type User } from "../types"
 
 const baseUrl = 'http://localhost:3000/user'
 
-type UserResponse = {body: {data: User[]}}
+type UserResponse = { body: { data: User[] } }
 
-export async function listUsers (): Promise<UserResponse> {
+export async function listUsers(): Promise<UserResponse> {
   const res = await fetch(baseUrl)
-  return  res.json() as  Promise<UserResponse>
+  return res.json() as Promise<UserResponse>
 }
 
 export async function CreateUser(name: string): Promise<void> {
@@ -15,7 +15,7 @@ export async function CreateUser(name: string): Promise<void> {
     headers: {
       'content-type': 'application/json'
     },
-    body: JSON.stringify({name})
+    body: JSON.stringify({ name })
   })
 
   if (!res.ok) throw new Error('')

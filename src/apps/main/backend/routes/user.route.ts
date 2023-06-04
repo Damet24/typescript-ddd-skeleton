@@ -6,12 +6,12 @@ import { validateReqSchema } from '.'
 import { type PostUserController } from '../controllers/user/PostUserController'
 
 export const register = (router: Router): void => {
-  const reqSchema = [
+  const createUserRequestSchema = [
     body('name').exists().isString()
   ]
 
   const createUserController = container.get<PostUserController>('Apps.main.backend.PostUserController')
-  router.post('/user', reqSchema, validateReqSchema, async (req: Request, res: Response, next: NextFunction) => {
+  router.post('/user', createUserRequestSchema, validateReqSchema, async (req: Request, res: Response, next: NextFunction) => {
     await createUserController.run(req, res, next)
   })
 
