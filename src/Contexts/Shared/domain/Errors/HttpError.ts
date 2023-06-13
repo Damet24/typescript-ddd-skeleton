@@ -5,6 +5,7 @@ export class HttpError extends Error {
 
   constructor (statusCode: number, msg: any, payload: any | null = null) {
     super(msg)
+    super.name = 'HttpError'
     this.statusCode = statusCode
     this.payload = payload
   }

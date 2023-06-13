@@ -1,13 +1,12 @@
 import httpStatus from 'http-status'
-import { type UseCase } from '../../../../../Contexts/Shared/domain/UseCase'
 import { type Responses } from '../../../../../Contexts/Shared/infrastructure/Responses'
 import { type Controller } from '../Controller'
 import type { Request, Response, NextFunction } from 'express'
-import { type User } from '../../../../../Contexts/User/domain/User'
+import { type ListAllUserUseCase } from '../../../../../Contexts/User/application/Get/ListAllUserUseCase'
 
 export class GetUserController implements Controller {
   constructor (
-    private readonly UseCase: UseCase<any, User[]>,
+    private readonly UseCase: ListAllUserUseCase,
     private readonly responses: Responses
   ) {}
 
