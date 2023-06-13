@@ -18,4 +18,5 @@ function boostrap (): void {
     })
     .catch(console.error)
 }
+
 boostrap()
